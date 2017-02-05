@@ -1,0 +1,32 @@
+(in-package :sorcery-es)
+
+(defparameter *area-text*
+  '(("stonehenge" "at stonehenge")
+    ("nearStonehenge" "near stonehenge")
+    ("tunnelMouth" "in the tunnel mouth")
+    ("wastelands" "in the wastelands")
+    ("tunnel" "in the tunnel")
+    ("outsideCastle" "outside the castle") 
+    ("strongroom" "in the strong room")
+    ("dungeons" "in the dungeons")
+    ("castle" "in the castle")
+    ("sanctuary" "in the sanctuary")
+    ("waterfall" "at the waterfall")
+    ("nearThePalace" "near the palace")
+    ("nearTheChateau" "near the chateau")
+    ("palace" "in the palace")
+    ("aboveChateau" "above the chateau")
+    ("chateau" "in the chateau")
+    ("woods" "in the woods")
+    ("nearTheVillage" "near the village")))
+
+(defun area-text (str)
+  (cadr (assoc str *area-text* :test #'string=)))
+
+(defclass text-system (system) ())
+
+(defmethod update ((system text-system) entity-manager)
+  (dolist (text (find-components entity-manager 'text))
+    (when (slot-boundp text 'update)
+      (when-let ((update (text-update text)))
+	(funcall update text)))))
