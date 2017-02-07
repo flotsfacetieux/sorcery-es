@@ -13,6 +13,12 @@ You'll need to install :
 - [the Quicklisp package tool][3]
 - [cl-entity-system][4]
 
+Clone the repository to your local-projects quicklisp directory.
+```
+cd ~/quicklisp/local-projects
+git clone https://github.com/flotfacetieux/sorcery-es
+```
+
 Start SBCL and type the following at the REPL prompt:
 ```lisp
 (ql:quickload :sorcery-es)
