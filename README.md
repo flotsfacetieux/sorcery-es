@@ -32,8 +32,13 @@ The game is keyboard controlled :
 - key right : right
 - space : fire
 
+What does it look like?
+-----------------------
+
+[Youtube video][5]
 
 [1]: https://en.wikipedia.org/wiki/Entity%E2%80%93component%E2%80%93system
 [2]: http://www.sbcl.org/
 [3]: http://www.quicklisp.org/
 [4]: https://github.com/flotfacetieux/cl-entity-system
+[5]: https://www.youtube.com/channel/UCEozyq6XnDKQvRLYimYp1uA

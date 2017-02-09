@@ -164,14 +164,14 @@
 	       (player-bb (entity-component entity-manager
 					    (player-entity)
 					    'bounding-box)))
-      
-      (when-let ((action (item-action item)))
-	(funcall action
-		 entity-manager
-		 :x (x player-bb)
-		 :y (y player-bb))
-	(empty-player-bag entity-manager)
-	(switch-off-player-fire)))))
+	      
+	      (when-let ((action (item-action item)))
+			(funcall action
+				 entity-manager
+				 :x (x player-bb)
+				 :y (y player-bb))
+			(empty-player-bag entity-manager)
+			(switch-off-player-fire)))))
 
 (defun kill-monster (entity-manager entity)
   (let ((bb (entity-component entity-manager entity 'bounding-box)))

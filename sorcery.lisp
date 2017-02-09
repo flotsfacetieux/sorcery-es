@@ -53,6 +53,12 @@
 (defun area-entities (area-id)
   (gethash area-id *entities*))
 
+(defun update-swank ()
+  (let ((connection (or swank::*emacs-connection*
+			(swank::default-connection))))
+    (when connection
+      (swank::handle-requests connection t))))
+
 (defun start ()
   (sdl:with-init ()
     (sdl:window 800
@@ -90,4 +96,5 @@
       (:idle ()
 	     (sdl:clear-display sdl:*black*)
 	     (run-state *current-state*)
+	     (update-swank)
 	     (sdl:update-display)))))

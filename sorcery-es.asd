@@ -3,7 +3,7 @@
     :version "0.0.1"
     :maintainer "Flot Facetieux"
     :author "Flot Facetieux"
-    :licence "GPL"
+    :licence "MIT"
     :serial t
     :description "Sorcery refactored with Entity System Components."
     :long-description
@@ -12,6 +12,7 @@
 		 :lispbuilder-sdl-image
 		 :lispbuilder-sdl-gfx
 		 :lispbuilder-sdl-ttf
+		 :swank
 		 :cl-entity-system)
     :components ((:file "package")
 		 (:file "conf")
