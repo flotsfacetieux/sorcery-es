@@ -32,6 +32,26 @@ The game is keyboard controlled :
 - key right : right
 - space : fire
 
+Game Instructions 
+-----------------
+8 of your friends are prisoners. Free them.
+Each cell is locked with a different key.
+
+Be carefull to the monsters.
+
+You can kill them :
+- With a sword you can kill yellow sorcerers
+- With a flail you can kill 'Eye Monsters' and an Boars
+- With an axe you can kill 'Grey Monsters'
+- If you pick up a star, use it, to launch 8 fireballs
+- With a bag of spells, you can launch, 4 fireballs
+
+Trap doors, can be opened with a gold key or an amphora.
+
+Cauldrons are safe places, stay on them to restore your energy.
+
+Keep an eye on time.
+
 What does it look like?
 -----------------------
 
