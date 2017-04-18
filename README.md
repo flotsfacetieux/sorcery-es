@@ -41,7 +41,7 @@ Be carefull to the monsters.
 
 You can kill them :
 - With a sword you can kill yellow sorcerers
-- With a flail you can kill 'Eye Monsters' and an Boars
+- With a flail you can kill 'Eye Monsters' and Boars
 - With an axe you can kill 'Grey Monsters'
 - If you pick up a star, use it, to launch 8 fireballs
 - With a bag of spells, you can launch, 4 fireballs
